@@ -28,7 +28,7 @@ pipeline {
     
     stage('Generating project release') {
       steps {
-        bat 'node --max_old_space_size=4096 ./node_modules/@angular/cli/bin/ng build --prod --build-optimizer true --base-href /frontend-ap-marketing-place/ --output-hashing=all'
+        bat 'node --max_old_space_size=4096 ./node_modules/@angular/cli/bin/ng build --configuration production --build-optimizer true --base-href /frontend-ap-marketing-place/ --output-hashing=all'
       }
     }
 	 
